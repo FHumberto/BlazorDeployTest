@@ -1,22 +1,32 @@
-name: dotnet
-on: 
-- push
+name: DeployToGitHubPages
+env:
+  PUBLISH_DIR: bin/Release/netstandard2.1/publish/wwwroot
+
+# Controls when the action will run
+on:
+  push:
+    branches: [ main ]
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 7.0.x
-      - name: Publish with dotnet
-        run: dotnet publish --configuration Release --output build
-      - name: Deploy to Github Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BASE_BRANCH: main
-          BRANCH: gh-pages
-          FOLDER: build/wwwroot
-          SINGLE_COMMIT: true
+    - uses: actions/checkout@v2
+
+    - name: Publish app
+      run: dotnet publish -c Release
+
+    - name: Rewrite base href
+      uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
+      with:
+        html_path: ${{ env.PUBLISH_DIR }}/index.html
+        base_href: /BlazorDeployTest/
+
+    - name: GitHub Pages
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v1.5.1
+      with:
+        target_branch: gh-pages
+        build_dir: ${{ env.PUBLISH_DIR }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
