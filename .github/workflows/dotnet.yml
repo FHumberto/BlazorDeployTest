@@ -15,7 +15,7 @@ jobs:
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: "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"
           BASE_BRANCH: main
           BRANCH: gh-pages
           FOLDER: build/wwwroot
