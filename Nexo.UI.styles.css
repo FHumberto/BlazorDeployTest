@@ -491,11 +491,6 @@ article[b-fn6y7fh5ku]
     gap: 3rem;
 }
 
-.summaryCard > img[b-9q287k2ukm]
-{
-    width: 100%;
-}
-
 .summaryCard-right[b-9q287k2ukm]
 {
     display: flex;
@@ -648,6 +643,11 @@ article[b-fn6y7fh5ku]
     .lead-tittle-sec[b-9q287k2ukm]
     {
         font-size: clamp(0.8rem, 3.5vw, 2rem);
+    }
+
+    .summaryCard > img[b-9q287k2ukm]
+    {
+        width: 100%;
     }
 }
 /* /Pages/Projects.razor.rz.scp.css */
