@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Nexo.UI",
   "resources": {
-    "hash": "sha256-06/F0LwJHPkRXid9VfrQklUcBkWZyBsx0uoQNI3fsuI=",
+    "hash": "sha256-hYYZIEWwoCz2gW1NrN7jo3AjoJ9IJbVLz1gj56mAZ3U=",
     "jsModuleNative": {
       "dotnet.native.8.0.6.suuomc2hr0.js": "sha256-YU6M9+jtDVnB8/wtrgIndOstzNh778Ls8g9XnbjorSk="
     },
@@ -37,7 +37,7 @@
       "Microsoft.JSInterop.wasm": "sha256-YrrPPJg6rA/Bmx1sladSdAwoqL78YSP+3xcjhBg0bnc=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-ZyIqQss3I64BQC2gc7JEDrkYq14vXKEXuw5vBJ5oFYM=",
       "netstandard.wasm": "sha256-+fAJCvV7+tRaHX6WBJX6bri6G1su+RuHdwz4e8ytT2Y=",
-      "Nexo.UI.wasm": "sha256-W5697NfVHyLxOwGleZfmMZBlPjKDzk3TjecBxfj0kFs=",
+      "Nexo.UI.wasm": "sha256-uhs3yAI/KXjkvtqrMtOoxVEK1zgj94sr6WLbWuv1+70=",
       "System.Collections.Concurrent.wasm": "sha256-fy0jPil7fHjM/n+HnradCf8JgNeiz1wDaZ1W5e+U4II=",
       "System.Collections.wasm": "sha256-nI0Gsf5cfbmMvZG80HAGI8rBz8MkyIR8ZzVtG5DedQk=",
       "System.ComponentModel.Annotations.wasm": "sha256-AYKNXaI5vs/KqlNoqRA7fZsWFgN8rcB3144rnnBSeBg=",

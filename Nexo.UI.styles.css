@@ -494,6 +494,7 @@ article[b-fn6y7fh5ku]
 {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .summaryCard-right-points[b-9q287k2ukm]
@@ -615,6 +616,19 @@ article[b-fn6y7fh5ku]
     #servicesContainer[b-9q287k2ukm]
     {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .points-li-icon[b-9q287k2ukm]
+    {
+        display: none;    
+    }
+
+    #contactContainer[b-9q287k2ukm]
+    {
+        flex-direction: column;
     }
 }
 /* /Pages/Projects.razor.rz.scp.css */
