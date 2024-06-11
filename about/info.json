@@ -1,0 +1,14 @@
+{
+  "Name": "Nexo",
+  "Cover": "about/cover_600x400.svg",
+  "Demo": "Link para demonstração do projeto",
+  "Type": "Pessoal",
+  "Category": "Web",
+  "Description": "Projeto pessoal de portfólio que reúne todas as informações relevantes sobre minha trajetória profissional e interesses na área de programação",
+  "Tech":
+  [
+    "C#",
+    "BlazorWASM",
+    ".NET"
+  ]
+}
