@@ -1,16 +1,16 @@
 ﻿<div id="topbar">
     <img id="topbar-logo" src="img/header-logo_fh.png" alt="FH Logo" />
-    <img href="https://raw.githubusercontent.com/FHumberto/BlazorDeployTest/main/src/Nexo.UI/wwwroot/img/header-logo_fh.png">
+
     <div>
         <button id="topbar-nav-toggle" type="button" @onclick="ToggleNavMenu">☰</button>
 
         <nav class="topbar-nav-items @NavCollapse">
-            <NavLink href="" Match="NavLinkMatch.All">Início</NavLink>
-            <NavLink href="about">Sobre</NavLink>
-            <NavLink href="education">Educação</NavLink>
-            <NavLink href="experience">Experiência</NavLink>
-            <NavLink href="projects">Projetos</NavLink>
-            <NavLink href="#contact">Contato</NavLink>
+            <NavLink href="" Match="NavLinkMatch.All" @onclick="ToggleNavMenu">Início</NavLink>
+            <NavLink href="about" @onclick="ToggleNavMenu">Sobre</NavLink>
+            <NavLink href="education" @onclick="ToggleNavMenu">Educação</NavLink>
+            <NavLink href="experience" @onclick="ToggleNavMenu">Experiência</NavLink>
+            <NavLink href="projects" @onclick="ToggleNavMenu">Projetos</NavLink>
+            <NavLink href="#contact" @onclick="ToggleNavMenu">Contato</NavLink>
         </nav>
     </div>
 </div>
